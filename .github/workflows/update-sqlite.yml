@@ -13,7 +13,7 @@ on:
 jobs:
   download-and-update:
     name: Download and update SQLite
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     env:
       ENV_YEAR: ${{ github.event.inputs.year }}
       ENV_VERSION: ${{ github.event.inputs.version }}
